@@ -1,12 +1,15 @@
--- Aluno: Vinicius Augusto Andrade Albuquerque (Apolo)
+{-- Aluno: Vinicius Augusto Andrade Albuquerque (Apolo)
 
--- Questão 2:
--- Assumindo a estrutura de sinônimos abaixo:
--- type Nome = String
--- type Idade = Int
--- type Telefone = Int
--- type Pessoa = (Nome, Idade , Telefone)
--- Crie uma função que recebe quatro pessoas e deve retornar uma String contendo nome e telefone das pessoas cujas idades são maiores ou iguais a média das idades das quatro pessoas passadas como parâmetro.
+Questão 2:
+Assumindo a estrutura de sinônimos abaixo:
+
+type Nome = String
+type Idade = Int
+type Telefone = Int
+type Pessoa = (Nome, Idade , Telefone)
+
+Crie uma função que recebe quatro pessoas e deve retornar uma String contendo nome e telefone das pessoas cujas idades
+são maiores ou iguais a média das idades das quatro pessoas passadas como parâmetro.--}
 
 type Nome = String
 type Idade = Int
