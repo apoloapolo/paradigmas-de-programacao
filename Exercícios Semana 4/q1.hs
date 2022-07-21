@@ -15,4 +15,3 @@ poder "dragão" = 100
 
 calculaForca :: [(String, Int)] -> Int
 calculaForca = foldr (\ qtd -> (+) (snd qtd * poder (fst qtd))) 0
-
