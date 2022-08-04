@@ -1,0 +1,9 @@
+1;60;false;nenhuma
+1;60;false;nenhuma
+1;66;false;nenhuma
+1;88;false;leve
+1;60;false;leve
+1;51;false;leve
+1;55;false;forte
+1;60;false;forte
+1;60;false;forte
