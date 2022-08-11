@@ -36,3 +36,4 @@ putLines (a:as)|null as = shorten a|otherwise = putLines as
 main3 :: IO ()
 main3 = do x <- readFile "C:/Users/vinic/Desktop/a.txt"
            putStrLn (putLines (lines x))
+
