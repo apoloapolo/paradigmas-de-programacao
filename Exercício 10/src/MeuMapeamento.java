@@ -11,7 +11,8 @@ import java.util.ArrayList;
  */
 public class MeuMapeamento<C,V> implements IMeuMapeamento<C,V> {
 	
-	private ArrayList<C> chaves;
+	
+ 	private ArrayList<C> chaves;
 	private ArrayList<V> valores;
 
 	public MeuMapeamento() {
@@ -50,9 +51,7 @@ public class MeuMapeamento<C,V> implements IMeuMapeamento<C,V> {
 	@Override
     public C[] chaves() {
     	C[] c = (C[]) this.chaves.toArray();
-    	C[] c1 = new C[];
-    	System.arraycopy(c, 0, c1, 0, this.chaves.size() );
-        return (C[]) c;
+        return array;
     }
 
    
