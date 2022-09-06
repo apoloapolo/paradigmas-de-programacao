@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
@@ -32,13 +34,13 @@ public interface IMeuMapeamento<C, V> {
      *
      * @return Os valores do mapeamento.
      */
-    V[] valores();
+    Collection<V> valores();
 
     /**
      * Retorna as chaves do mapeamento.
      *
      * @return As chaves do mapeamento.
      */
-    C[] chaves();
+    Collection<C> chaves();
 
 }

@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -10,7 +12,7 @@
 public class TesteMeuMapeamento {
     
     public static void main(String[] args) {
-        MeuMapeamento<Integer, String> mis = new MeuMapeamento<>();
+        MeuMapeamentoViniciusAlbuquerqueApolo<Integer, String> mis = new MeuMapeamentoViniciusAlbuquerqueApolo<>();
         mis.insere(1, "a");
         mis.insere(2, "b");
         mis.insere(3, "c");
@@ -23,21 +25,21 @@ public class TesteMeuMapeamento {
         
         mis.insere(1, "a2");
 
-        Integer[] chaves = mis.chaves();
+        Collection<Integer> chaves = mis.chaves();
         String sc = "";
         for (Integer chave : chaves) {
             sc += chave + ",";
         }
         System.out.println(sc);//1,2,3,
 
-        String[] valores = mis.valores();
+        Collection<String> valores = mis.valores();
         String sc2 = "";
         for (String valor : valores) {
             sc2 += valor + ",";
         }
         System.out.println(sc2);//a2,b,c,
         
-        MeuMapeamento<String, String> mss = new MeuMapeamento<>();
+        MeuMapeamentoViniciusAlbuquerqueApolo<String, String> mss = new MeuMapeamentoViniciusAlbuquerqueApolo<>();
         mss.insere("1", "a");
         mss.insere("2", "b");
         mss.insere("3", "c");

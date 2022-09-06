@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,13 +10,15 @@ import java.util.ArrayList;
  *
  * @author sidneynogueira
  */
-public class MeuMapeamento<C,V> implements IMeuMapeamento<C,V> {
-	
+
+//Aluno: Vinicius Augusto Andrade Albuquerque (Apolo)
+
+public class MeuMapeamentoViniciusAlbuquerqueApolo<C,V> implements IMeuMapeamento<C,V> {
 	
  	private ArrayList<C> chaves;
 	private ArrayList<V> valores;
 
-	public MeuMapeamento() {
+	public MeuMapeamentoViniciusAlbuquerqueApolo() {
 		this.chaves = new ArrayList<C>();
 		this.valores = new ArrayList<V>();
 	}
@@ -39,19 +42,14 @@ public class MeuMapeamento<C,V> implements IMeuMapeamento<C,V> {
         return v;
     }
 
-    @SuppressWarnings("unchecked")
 	@Override
-    public V[] valores() {
-    	V[] v = (V[]) this.valores.toArray();
-        return v;
+    public Collection<V> valores() {
+        return this.valores;
     }
 
-    
-	@SuppressWarnings("unchecked")
 	@Override
-    public C[] chaves() {
-    	C[] c = (C[]) this.chaves.toArray();
-        return array;
+    public Collection<C> chaves() {
+        return this.chaves;
     }
 
    
